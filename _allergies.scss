@@ -1,0 +1,14 @@
+.allergies-header{
+  @extend .section-heading;
+  padding: 1rem;
+  line-height: 1;
+}
+
+.allergies-list{
+  @extend .result-list;
+  padding: 0px;
+}
+
+.allergyDate{
+  @extend .resultDate;
+}

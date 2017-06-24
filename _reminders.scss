@@ -1,0 +1,178 @@
+.reminders-header{
+  @extend .section-heading;
+  padding: 1rem;
+  line-height: 1;
+}
+.remName{
+	font-size:$font-size-medium;
+	
+}
+.navbar-global {
+  @extend .navbar-toggle;
+  float: left;
+}
+
+.panel .kp-mmr-patient{
+	background-color:$purple;
+	color:$gray;
+	font-size:18px;
+	//padding:.4em $gutter;
+	color:$gray-dark;
+}
+
+.panel .kp-mmr-hcr-label{
+	padding-bottom:.15em;
+	//padding-top:.15em;
+} 
+
+.remindersData .kp-divider-bot{
+	border-bottom:1px solid $gray-lighter;
+}
+
+.remindersData{
+	background-color:$white;
+}
+
+ul.mmr-imm-hidedates{margin-bottom:0px;}
+
+.hcr-content-container{
+	margin-bottom:15px;
+}
+.toggleDates .caret{color:$gray;margin-left:10px}
+
+/* Broken after refactored healthcarereminders template
+.remindersData div.kp-divider-bot:last-child{
+	border-bottom:none;
+	margin-bottom:0px!important;
+}*/
+
+.hcr-content{
+	background-color:$white;
+}
+
+.lastDone,.dueDate{
+	vertical-align:top;
+	color:$gray-light;
+}
+a.toggleDates{
+	color:$link-color
+}
+a.toggleDates .caret{
+	color:$gray;
+	margin-left:10px;
+}
+.prevDates{
+  list-style-type:none;
+  display:inline-block;
+  padding-left:0px
+}
+
+.lastDone .mmr-imm-hidedates li{
+	display:none;
+}
+
+.lastDone .mmr-imm-hidedates li:first-child{
+	display:block;
+}
+
+.lastDone .mmr-imm-dates li{
+	display:block;
+}
+
+.lastDone{
+  cursor:pointer;
+}
+
+.hcr-header-name{
+  @extend .header-date;
+  width: 40%;
+  vertical-align: top;
+  font-size: $base-font;
+  @include media($small-screen){
+    width:100%;
+    font-size: $medium-font;
+  }
+  @include media($medium-screen){
+    width:100%;
+    font-size: $medium-font;
+  }
+}
+.hcr-header-lastdone{
+  @extend .immunization-header-name;
+  width: 25%;
+  @include media($small-screen){
+    width:100%;
+  }
+  @include media($medium-screen){
+    width:100%;
+  }
+}
+.hcr-header-date{
+  @extend .immunization-header-name;
+  width: 25%;
+  @include media($small-screen){
+    width:100%;
+  }
+  @include media($medium-screen){
+    width:100%;
+  }
+}
+.remindersFaq{
+  margin-top: 4%;
+}
+.forSort{
+  border-bottom:$light-grey 1px solid;
+  padding-top:$small-spacing;
+  padding-bottom: $small-spacing;
+  //padding-left: 1rem;
+  text-transform: uppercase;
+}
+.toggleDates .more{
+  text-transform: lowercase;
+}
+.lastDone.hcr-header-lastdone{
+  .toggleDates{
+	padding-left:0;
+  }
+}
+.panel-body.kp-panel.rem-cat{
+  border-left: $light-grey 1px solid;
+  border-right:$light-grey 1px solid;
+}
+.last-done-lbl{
+  display:none;
+  @include media($small-screen){
+    display:block;
+    float: left;
+    padding-left: 0;
+  }
+  @include media($medium-screen){
+    display:block;
+    float: left;
+    padding-left: 0;
+  }
+}
+.dueDateLbl, .dueDateText{
+  @include media($small-screen){
+    float:left;
+  }
+  @include media($medium-screen){
+    float:left;
+  }
+}
+
+#healthReminderPage{
+  .panel-body:before, .panel-body:after {
+    content: " ";
+    display: none;
+  }
+}
+.temp-hide{
+  display:none;
+}
+.pad-date{
+  padding-left:0.4rem;
+}
+.pad-ld{
+  padding-left:0.5rem;
+}

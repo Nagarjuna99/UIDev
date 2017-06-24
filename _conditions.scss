@@ -1,0 +1,12 @@
+.conditions-header{
+  @extend .section-heading;
+  padding: 1rem;
+  line-height: 1;
+}
+.conditions-list{
+  @extend .result-list;
+  padding: 0px;
+}
+.conditionDate{
+  @extend .resultDate;
+}

@@ -1,0 +1,123 @@
+.immunizations-header{
+  @extend .section-heading;
+  padding: 1rem;
+  line-height: 1;
+}
+.immunizationDate{
+  @extend .resultDate;
+}
+
+.kp-mmr-badge{
+	background-color:#A4B1E3;
+	padding: 6px 11px;
+	border-radius:12px;
+	color: #fff;
+	font-size:18px;
+	font-weight:bold;
+}
+
+a:hover .kp-mmr-item-title{text-decoration:underline}
+
+.kp-proxy-accordion .kp-proxy-body {padding:0;}
+
+.kp-proxy-accordion .kp-proxy-body .kp-proxy-panel{border:none;}
+.kp-proxy-accordion .kp-proxy-body .kp-proxy-panel ul li{padding-left:5%}
+.kp-proxy-accordion .kp-proxy-body .kp-proxy-panel ul{margin:0px}
+.kp-proxy-accordion .list-group .list-group-item{padding:0px}
+.kp-proxy-accordion .list-group .list-group-item a.accordion-toggle{padding:10px 3%;text-decoration:none;color:#333}
+
+/* RYAN- NEED TO PUT INTO MMR specific css */
+.kp-mmr-badge{background-color:#A4B1E3;padding: 6px 11px;border-radius:12px;color: #fff;font-size:18px;font-weight:bold;}
+
+
+.kp-mmr-chevron{
+	width: 1em;
+	display: inline-block;
+	float: right;
+	color: #A4B1E3;
+	margin-left:10px;
+}
+
+.kp-proxy-accordion .icon-down-arrow,
+.kp-proxy-accordion .icon-up-arrow{color:$gray-light}
+
+.kp-panel .immunizationList .dateList {
+	padding:0;
+}
+  
+.kp-panel .immunizationList .mmr-imm-hidedates li{
+	display:none;
+}
+
+.kp-panel .immunizationList .mmr-imm-hidedates li:first-child{
+	display:block;
+}
+
+.kp-panel .immunizationList .mmr-imm-dates li{
+	display:block;
+}
+.immuDateListItem{
+  background-color: #f6f5f1;
+  border: 0px;
+  margin-top:20%;
+}
+.more >.caret{
+  float:none;
+  margin-top:0;
+}
+.toggleDates{
+  @include media($large-screen){
+    padding-left:65.5%;
+    text-align: left;
+  }
+  padding-left: 0.6em;
+  a{
+    text-decoration: none;
+  }
+}
+
+.more{
+  cursor: pointer;
+  font-size: $base-font;
+  color: $kp-blue !important;
+  padding:0 !important;
+}
+
+.immunization-header-date{
+  @extend .header-date;
+  width:65%;
+  vertical-align: top;
+  font-size:$base-font;
+  @include media($small-screen){
+    width:100%;
+    text-align: left;
+    font-size:$medium-font;
+  }
+  @include media($medium-screen){
+    width:100%;
+    text-align: left;
+    font-size:$medium-font;
+  }
+}
+.immunization-header-name{
+  @extend .allergies-header-name;
+  padding-left: 0;
+  width:20%;
+  font-size:$base-font;
+  @include media($small-screen){
+    padding-left: 0.5em;
+  }
+  @include media($medium-screen){
+    padding-left: 0.5em;
+  }
+}
+.immunizationList{
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.imm-left-pad{
+  padding-left:0.5% !important;
+}
+.imm-list-group{
+  padding: 0;
+}

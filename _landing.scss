@@ -1,0 +1,137 @@
+$medium-screen-max: 815px;
+
+.aqua{
+  background-color: $kp-blue !important;
+}
+
+.dropdown .-options {
+  @include media($large-screen){
+    padding-left: 11.7em;
+  }
+}
+
+.dropdown .-value{
+  height:10%;
+  padding-top: $medium-spacing + 5px;
+}
+
+.dropdown.-open .-options{
+  max-height: 300px;
+}
+
+.dropdown .-options > li {
+  color: $gray-darker;
+  @include media($large-screen){
+    color: #f4f5f6 !important;
+  }
+}
+
+/*.proxy-dropdown{
+  color: $gray-darker;
+  @include media($large-screen){
+    color: inherit;
+  }
+}*/
+
+.proxy-picker{
+  background-color: $gray-lighter;
+  @include media($large-screen){
+    background-color: inherit;
+  }
+}
+
+.proxy-border-bottom{
+   @include media($large-screen){
+    height: 1px;
+    width: 40em;
+    background-color: #f4f5f6;
+    margin: 0 auto;
+   }
+}
+
+.family-selector{
+  padding: none;
+  font-size: $small-font;
+  @include media($large-screen){  
+    padding-top: $xl-spacing;
+    font-size: $large-font;
+  }
+}
+
+.page-heading {
+  padding-left: 1em;
+  padding-top: 2em;
+  font-size: $extra-large-font;
+}
+
+.items-box{
+  padding-top: 1em;
+  padding-left: 1em;
+  border-top: 1px solid $graphite-dark;
+   @include media($large-screen){
+     border-top: none;
+   }
+}
+
+.mmr-items{
+  @include media($large-screen){
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  @include media($medium-screen){
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  border:none;
+}
+
+.layout-top-margin{
+  margin-top: -2em;
+}
+
+.mmr-items li{
+  padding-top: 2em;
+  display: inline-block;
+  font-size: $medium-font;
+  @include media($large-screen){
+    width:100em;
+    font-size: $large-font;
+  }
+  > div{
+    background-color: $kp-blue;
+    border-radius: 14pt;
+    font-size: 14pt;
+    height: 28pt;
+    width: 28pt;
+    color: #FFFFFF;
+    line-height: 28pt;
+    text-align: center;
+    display: inline-block;
+  }
+  > a{
+    display: inline-block;
+    border:none;
+    @include media($medium-screen){
+      width: 72%;
+    }
+    display: inline-flex;
+  }
+  > a:visited{
+    color: #595959;
+    display: inline-block;
+    border:none;
+  }
+  > a:hover{
+    color: #595959;
+    display: inline-block;
+    border:none;
+  }
+}
+
+@media screen and (max-width: $medium-screen-max) {
+  .mobile-error {
+    margin-top: 35px;
+  }
+}
